@@ -1,0 +1,16 @@
+main {
+  height: 200px;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexItem {
+  width: 200px;
+  border: 1px solid black;
+}
+
+.flexItem:first-child {
+  flex-shrink: 2;
+}
