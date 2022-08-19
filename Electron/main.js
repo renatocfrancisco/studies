@@ -19,11 +19,7 @@ app.on('ready', () => {
     let menuPrincipal = Menu.buildFromTemplate(templateMenu);
     Menu.setApplicationMenu(menuPrincipal);
 
-    globalShortcut.register('CmdOrCtrl+Shift_J', () => {
-        mainWindow.send('atalho-iniciar-parar');
-    });
-
-    mainWindow.openDevTools();
+    //mainWindow.openDevTools();
     mainWindow.loadURL(`file://${__dirname}/app/index.html`);
 });
 
